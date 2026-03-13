@@ -96,6 +96,21 @@ nav{
 
 /********************* 1er Section ***************************/
 
+
+
+/* FOOTER */
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: #122ac9;
+  color: white;
+}
+
+h5{
+  margin: 20px 0px 0px 0px;
+}
+
 /* Responsive */
 @media (min-width: 582px) {
   .Hero {
