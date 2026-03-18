@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="./src/style.css"/>
+    <link rel="stylesheet" href="./Styles/style.css"/>
+    <link rel="stylesheet" href="./Styles/style_contact.css"/>
 </head>
 <body>
     <header>
@@ -60,9 +61,25 @@
             </div>
         </nav>
     </header>
-<!---------------- 1er Section --------------------->
-    <section>
-        
+<!---------------- Formulaire --------------------->
+    <section class="Formulaire">
+        <div class="form-container">
+            <div class="form"> 
+                <!--Formulaire venant de uiniverse.io-->
+                <span class="heading">Contactez-nous</span>
+                <input placeholder="Nom" type="text"
+                id="Nom" class="input">
+                <input placeholder="Email" id="mail" type="email" class="input">
+                <textarea placeholder="Votre message" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                <div class="button-container">
+                <div class="send-button">envoyer</div>
+                    <div class="reset-button-container">
+                        <div id="reset-btn" class="reset-button">effacer</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
 <!---------------- Le Footer --------------------->
     <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">

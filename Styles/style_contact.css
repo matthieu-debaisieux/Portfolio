@@ -1,0 +1,138 @@
+:root {
+  /* Couleurs principales */
+    --couleur-primaire: #0A2540;
+    --couleur-secondaire: #1F4E79;
+    --couleur-claire: #4A90E2;
+    --couleur-accent: #00B5AD;
+
+  /* Couleurs neutres */
+    --blanc: #FFFFFF;
+    --gris-clair: #F4F4F4;
+    --gris-sombre: #2C3E50;
+
+  /* Espacements */
+    --petit-espacement: 8px;
+    --moyen-espacement: 16px;
+    --grand-espacement: 32px;
+}
+
+/******Le Form******/
+.Formulaire{
+  padding-top: 100px
+}
+.form-container {
+  width: 91%;
+  margin: 0px 20px;
+  background-color: var(--couleur-primaire);
+  padding: 30px;
+  border-left: 5px solid var(--couleur-claire);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading { /*Pour le titre du form*/
+  display: block;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: var(--gris-sombre);
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid var(--couleur-claire);
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--gris-sombre);
+  color: var(--gris-clair);
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid var(--couleur-claire);
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: var(--couleur-claire);
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid var(--couleur-claire);
+  color: var(--couleur-claire);
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px var(--couleur-claire));
+  flex-basis: 30%;
+}
+/*Les animations de couleur au click*/
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: var(--couleur-claire);
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: var(--couleur-claire);
+  color: #001925;
+}
+
+/*Taille pour tablette*/
+@media (min-width: 768px){
+  /******Le Form******/
+section{
+  display: flex;
+  justify-content: center;
+}
+.heading{
+  font-size: x-large;
+}
+.form-container{
+  width: 91%;
+}
+.input, .textarea{
+  font-size: large;
+}
+.button-container{
+  font-size: large;
+}
+}
