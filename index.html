@@ -4,77 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./src/style.css"/>
   </head>
-  <header>
-    <!--============================Navbar================================-->
-    <nav>
-      <div class="navbar bg-base-100 shadow-sm">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn lg:hidden Drop">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+  <body>
+    <header>
+      <!--============================Navbar================================-->
+      <nav>
+        <div class="navbar shadow-sm">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn lg:hidden Drop">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content z-1 mt-3 w-52 p-2 shadow">
+                <li><a>Accueil</a></li>
+                <li><a>Présentation</a></li>
+                <li><a>Réalisation</a></li>
+                <li><a>Contact</a></li>
+                <li>
+                  <a>Professionelle</a>
+                  <ul class="p-2">
+                    <li><a>Gestion du patrimoine</a></li>
+                    <li><a>Veille technologique</a></li>
+                    <li><a>Tableau de compétence</a></li>
+                    <li><a>Compétence</a></li>
+                    <li><a>Personnelle</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <ul
-              tabindex="-1"
-              class="menu menu-sm dropdown-content z-1 mt-3 w-52 p-2 shadow">
+            <a class="text-xl profil" href="">Debaisieux Matthieu</a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
               <li><a>Accueil</a></li>
               <li><a>Présentation</a></li>
               <li><a>Réalisation</a></li>
               <li><a>Contact</a></li>
               <li>
-                <a>Professionelle</a>
-                <ul class="p-2">
-                  <li><a>Gestion du patrimoine</a></li>
-                  <li><a>Veille technologique</a></li>
-                  <li><a>Tableau de compétence</a></li>
-                  <li><a>Compétence</a></li>
-                  <li><a>Personnelle</a></li>
-                </ul>
+                <details>
+                  <summary>Professionelle</summary>
+                  <ul class="p-2 bg-base-100 w-40 z-1 Drop">
+                    <li><a>Gestion du patrimoine</a></li>
+                    <li><a>Veille technologique</a></li>
+                    <li><a>Tableau de compétence</a></li>
+                    <li><a>Compétence</a></li>
+                    <li><a>Personnelle</a></li>
+                  </ul>
+                </details>
               </li>
             </ul>
           </div>
-          <a class="text-xl profil" href="">Debaisieux Matthieu</a>
         </div>
-        <div class="navbar-end hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Accueil</a></li>
-            <li><a>Présentation</a></li>
-            <li><a>Réalisation</a></li>
-            <li><a>Contact</a></li>
-            <li>
-              <details>
-                <summary>Professionelle</summary>
-                <ul class="p-2 bg-base-100 w-40 z-1 Drop">
-                  <li><a>Gestion du patrimoine</a></li>
-                  <li><a>Veille technologique</a></li>
-                  <li><a>Tableau de compétence</a></li>
-                  <li><a>Compétence</a></li>
-                  <li><a>Personnelle</a></li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <body>
+      </nav>
+    </header>
 <!----------------Le Hero de la page-------------------------->
     <section class="Hero">
       <div
-      class="hero HeroBackground">
-      <div class="hero-overlay"></div>
+        class="hero min-h-screen
+        HeroBackground"
+      >
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content text-neutral-content text-center">
           <div class="max-w-md">
-            <h1 class="mb-3 text-5xl font-bold">Bienvenue sur mon portfolio</h1>
-            <p class="mb-2">
-              Etudiant en reconversion vers l'informatique, ma motivation et ma capacité d'adaptation sont mes atouts pour relever de nouveaux défis techniques.
-            </p>
+            <h1 class="mb-5 text-5xl font-bold">Bienvenue sur mon portfolio</h1>
+            <button class="btn btn-primary"><a href="#Titre">Get Started</a></button>
           </div>
         </div>
       </div>
     </section>
     <section>
+      <div class="card bg-base-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="card-title" id="Titre">Card Title</h2>
+          <p>Etudiant en reconversion vers l'informatique, ma motivation et ma capacité d'adaptation sont mes atouts pour relever de nouveaux défis techniques.</p>
+        </div>
+      </div>
     </section>
 <!---------------- Le Footer --------------------->
     <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
