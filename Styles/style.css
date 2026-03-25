@@ -1,11 +1,16 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html{
+  scroll-behavior: smooth;
+}
+
 nav{
   position: fixed;
   width: 100vw;
   z-index: 10;
 }
+
 .navbar{
   background-color: #122ac9;
 }
