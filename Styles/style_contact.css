@@ -8,7 +8,7 @@
   /* Couleurs neutres */
     --blanc: #FFFFFF;
     --gris-clair: #F4F4F4;
-    --gris-sombre: #082f81;
+    --bleu-gris-sombre: #082f81;
 
   /* Espacements */
     --petit-espacement: 8px;
@@ -40,7 +40,7 @@
 .form-container .form .input {
   color: #87a4b6;
   width: 100%;
-  background-color: var(--gris-sombre);
+  background-color: var(--bleu-gris-sombre);
   border: none;
   outline: none;
   padding: 10px;
@@ -59,7 +59,7 @@
   padding: 10px;
   border: none;
   outline: none;
-  background-color: var(--gris-sombre);
+  background-color: var(--bleu-gris-sombre);
   color: var(--gris-clair);
   font-weight: bold;
   resize: none;
@@ -144,8 +144,9 @@ section{
 }
 
 
-/* Pour l'aside "google map" */
-/* From Uiverse.io by arthur_6104   */
+/***********************************************************************************************        Pour l'aside "google map" ********************************************************************************************/
+
+/* From Uiverse.io by arthur_6104 - modified */
 .browser {
   background: lightgrey;
   border-radius: 7px;
@@ -153,12 +154,11 @@ section{
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  box-shadow: 5px 5px 10px rgba(31, 31, 31, 0.245);
 }
 
 /* tabs-head */
 .tabs-head {
-  background-color: #353535;
+  background-color: var(--bleu-gris-sombre);
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -203,7 +203,7 @@ section{
 .tabs-head .tab-open .rounded-l .mask-round {
   width: 100%;
   height: 100%;
-  background-color: #353535;
+  background-color: var(--bleu-gris-sombre);
   border-radius: 0 0 0 7px;
 }
 
@@ -221,7 +221,7 @@ section{
 .tabs-head .tab-open .rounded-r .mask-round {
   width: 100%;
   height: 100%;
-  background-color: #353535;
+  background-color: var(--bleu-gris-sombre);
   border-radius: 0 0 7px 0;
 }
 
