@@ -1,5 +1,5 @@
 import '../Styles/style.css'
-import { createTimeline, stagger, splitText } from 'animejs';
+import { createTimeline, stagger, splitText, animate, svg  } from 'animejs';
 
 const { chars } = splitText('h1', {
     chars: {
