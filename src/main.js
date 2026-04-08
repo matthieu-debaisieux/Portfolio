@@ -1,7 +1,7 @@
 import '../Styles/style.css'
 import { createTimeline, stagger, splitText, animate, svg  } from 'animejs';
 
-const { chars } = splitText('h1', {
+const { chars } = splitText('#hero', {
     chars: {
         wrap: 'clip',
         clone: 'bottom'
