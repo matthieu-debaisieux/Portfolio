@@ -4,7 +4,9 @@
 html{
   scroll-behavior: smooth;
 }
-
+body{
+  background-color: rgb(15,23,43);
+}
 nav{
   position: fixed;
   width: 100vw;
