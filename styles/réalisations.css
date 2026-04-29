@@ -1,0 +1,9 @@
+.tag {
+    backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
+}
+.proj-card:hover .tag {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(18, 42, 201, 0.3);
+}
+
